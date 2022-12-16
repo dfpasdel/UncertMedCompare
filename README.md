@@ -1,29 +1,11 @@
-# README #
+# BMMLE: BioMedical Machine Learning Evaluation
 
-This README would normally document whatever steps are necessary to get your application up and running.
+A python package to simplify the evaluation of machine learning models. Calculates several metrics and generate plots to 
+easily quantify and visualize clinical value of models.
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
+This package is currently under development. Feel free to use it (currently from the `develop` branch), to contribute to 
+it and to propose functionalities. 
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+David Pasdeloup (david.pasdeloup@ntnu.no)
