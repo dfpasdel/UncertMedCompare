@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "UncertMedCompare"
+description = "Comparison of Uncertain Clinical Measurement methods"
+version = "1.0.0"
+dependencies = ['numpy', 'scipy', 'pandas', 'matplotlib', 'seaborn', 'statsmodels', 'scikit-learn']
+requires-python = ">=3.9"
+authors = [
+    { name = "David Pasdeloup", email = "david.pasdeloup@ntnu.no" },
+    { name = "David Pasdeloup", email = "d.pasdeloup@gmail.com" },
+]
+readme = "README.md"
+
+[tool.setuptools.packages.find]
+include = ["UncertMedCompare"]
