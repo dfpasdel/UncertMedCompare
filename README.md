@@ -137,14 +137,14 @@ pip install --upgrade pip # Make sure pip is up to date first
 
 Install the package directly from the bitbucket repository
 ```bash
-pip install git+https://bitbucket.org/ntnuultrasoundgroup/uncertmedcompare.git
+pip install git+https://github.com/dfpasdel/UncertMedCompare.git
 ```
 
 **Option 2: From source**
 
 You can also install it from source by downloading the repo from either github or bitbucket
 ```bash
-git clone https://bitbucket.org/ntnuultrasoundgroup/uncertmedcompare.git
+git clone https://github.com/dfpasdel/UncertMedCompare.git
 cd UncertMedCompare
 pip install -e .
 ```
@@ -154,7 +154,7 @@ Follow this step if you want to run examples, tests or contribute to the code.
 
 **1. Clone repo**
 ```bash
-git clone https://bitbucket.org/ntnuultrasoundgroup/uncertmedcompare.git
+git clone https://github.com/dfpasdel/UncertMedCompare.git
 ```
 
 **2. Setup virtual environment**
