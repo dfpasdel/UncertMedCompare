@@ -135,14 +135,19 @@ First ensure that pip is up-to-date:
 pip install --upgrade pip # Make sure pip is up to date first
 ```
 
-Install the package directly from the bitbucket repository
+Install with pip:
+```bash
+pip install UncertMedCompare
+```
+
+Or install the package directly from the GitHub repository
 ```bash
 pip install git+https://github.com/dfpasdel/UncertMedCompare.git
 ```
 
 **Option 2: From source**
 
-You can also install it from source by downloading the repo from either github or bitbucket
+You can also install it from source by cloning the repo from GitHub
 ```bash
 git clone https://github.com/dfpasdel/UncertMedCompare.git
 cd UncertMedCompare
