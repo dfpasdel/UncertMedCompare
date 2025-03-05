@@ -10,6 +10,9 @@ dependencies = ['numpy', 'scipy', 'pandas', 'matplotlib', 'seaborn', 'statsmodel
 requires-python = ">=3.9"
 authors = [
     { name = "David Pasdeloup", email = "david.pasdeloup@ntnu.no" },
-    { name = "David Pasdeloup", email = "d.pasdeloup@gmail.com" },
 ]
 readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/dfpasdel/UncertMedCompare"
+Issues = "https://github.com/dfpasdel/UncertMedCompare/issues"
