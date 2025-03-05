@@ -13,6 +13,3 @@ authors = [
     { name = "David Pasdeloup", email = "d.pasdeloup@gmail.com" },
 ]
 readme = "README.md"
-
-[tool.setuptools.packages.find]
-include = ["UncertMedCompare"]
