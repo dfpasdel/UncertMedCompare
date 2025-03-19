@@ -45,6 +45,18 @@ class ContinuousComparator(object):
 
         bootstrap_regression_metrics()
             Calculates MAE, R2 (coefficient of determination), MSE, RMSE with bootstrapped CIs
+
+        plot_regression()
+            Plot the new values vs. the reference values
+
+        plot_bland_altman()
+            Generates a Bland-Altman plot of the data
+
+        plot_heteroscedasticity()
+            Generates a plot of the residuals together with their envelope to investigate heteroscedasticity
+
+        check_heteroscedasticity()
+            Runs hypothesis testing for heteroscedasticity with Breush-Pagan and White tests
     """
     def __init__(self,
                  reference_method_measurements: np.ndarray,
