@@ -45,6 +45,18 @@ class ContinuousComparator(object):
 
         bootstrap_regression_metrics()
             Calculates MAE, R2 (coefficient of determination), MSE, RMSE with bootstrapped CIs
+
+        plot_regression()
+            Plot the new values vs. the reference values
+
+        plot_bland_altman()
+            Generates a Bland-Altman plot of the data
+
+        plot_heteroscedasticity()
+            Generates a plot of the residuals together with their envelope to investigate heteroscedasticity
+
+        check_heteroscedasticity()
+            Runs hypothesis testing for heteroscedasticity with Breush-Pagan and White tests
     """
     def __init__(self,
                  reference_method_measurements: np.ndarray,
@@ -958,7 +970,7 @@ class ContinuousComparator(object):
                 legend_title_regression \
                 + "Slope: " + self.format_non_dimensional.format(self.metrics["linreg_slope"]) \
                 + "\nIntercept: " + self.format_dimensional.format(self.metrics["linreg_intercept"]) + units_suffix \
-                + "\nPearson r ($y$ vs. $\hat{y}$): " + self.format_non_dimensional.format(
+                + "\n" + r"$\rho$ ($y$ vs. $\hat{y}$): " + self.format_non_dimensional.format(
                     self.metrics["linreg_pearson_r"])
             ax.plot(regline_x,
                     regline_y,
@@ -1110,7 +1122,7 @@ class ContinuousComparator(object):
                     + self.format_non_dimensional.format(self.metrics["ba_slope_up_bound"]) + ")"
             correlation_label = ""
             if provide_correlation:
-                correlation_label = "Pearson's r: " + self.format_non_dimensional.format(self.metrics["ba_corr"])
+                correlation_label = r"$\rho_{BA}$:" + self.format_non_dimensional.format(self.metrics["ba_corr"])
                 if self.confidence_interval is not None:
                     correlation_label += \
                         " (" + self.format_non_dimensional.format(self.metrics["ba_corr_low_bound"]) + " - " \
